@@ -18,8 +18,6 @@ local scarl_key = 3
 local uzi_key = 8
 local set_off_key = 6
 
-local Pickup_key = nil
-
 ---- fire key ----
 
 local fire_key = "F8"
@@ -309,7 +307,7 @@ function recoil_value(_weapon,_duration)
 end
 --Not Tested !
 ------------------------
-if (event == "MOUSE_BUTTON_PRESSED" and arg == Pickup_key and IsModifierPressed("lshift") and IsModifierPressed("lalt")) then--一Press Tab equip all auto leftMousebutton+lshift+lalt
+if (event == "MOUSE_BUTTON_PRESSED" and arg == fire_key and IsModifierPressed("lshift") and IsModifierPressed("lalt")) then--一Press Tab equip all auto leftMousebutton+lshift+lalt
 		Sleep (10)
 		PressMouseButton(1)
 		Sleep (10)
